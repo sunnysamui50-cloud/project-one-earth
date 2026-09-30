@@ -12,7 +12,7 @@ permissions:
 env:
   SERVICE: project-one-earth
   REGION: ${{ vars.CLOUD_RUN_REGION || 'asia-southeast1' }}
-  PROJECT_ID: ${{ vars.GCP_PROJECT_ID }}
+  PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
 
 jobs:
   deploy:
